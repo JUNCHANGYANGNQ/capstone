@@ -1,4 +1,35 @@
-flask
-langchain
-openai
-faiss-cpu
+# Web server
+flask>=2.2.5
+flask-cors>=3.0.10
+
+# Load .env files
+python-dotenv>=1.0.0
+
+# LangChain core and integrations
+langchain>=0.2.3
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-huggingface>=0.0.20  # updated embedding/model integration
+
+# Hugging Face model support
+transformers>=4.40.0
+huggingface-hub>=0.22.2
+torch>=2.1.0
+accelerate>=0.24.1
+
+# Embedding models
+sentence-transformers>=2.3.1
+
+# Vector storage
+faiss-cpu>=1.7.4
+
+# Text splitting / loading
+tiktoken>=0.7.0
+unstructured>=0.11.5
+
+# For handling requests (optional but useful)
+requests>=2.31.0
+
+# Optional: For language detection and translation (if you use them)
+langdetect>=1.0.9
+deep-translator>=1.11.4
